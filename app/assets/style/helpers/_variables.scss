@@ -19,6 +19,11 @@ $gray-900: #212529 !default;
 $black:    #000 !default;
 // scss-docs-end gray-color-variables
 
+$gray-4: #BDBDBD;
+$gray-5: #E0E0E0;
+$gray-6: #F2F2F2;
+$gray-6-blur: rgba(#F2F2F2, .8);
+
 // fusv-disable
 // scss-docs-start gray-colors-map
 $grays: (
@@ -37,15 +42,15 @@ $grays: (
 
 // scss-docs-start color-variables
 $blue:    #0d6efd !default;
-$indigo:  #6610f2 !default;
+$indigo:  #6B00FF !default; //#6610f2
 $purple:  #6f42c1 !default;
 $pink:    #d63384 !default;
-$red:     #dc3545 !default;
+$red:     #EB5757 !default; //#dc3545
 $orange:  #fd7e14 !default;
-$yellow:  #ffc107 !default;
+$yellow:  #FFCC00 !default; //#ffc107
 $green:   #198754 !default;
-$teal:    #20c997 !default;
-$cyan:    #0dcaf0 !default;
+$teal:    #00C2BA !default; //#20c997
+$cyan:    #42EDF0 !default; //#0dcaf0
 // scss-docs-end color-variables
 
 // scss-docs-start colors-map
@@ -67,15 +72,17 @@ $colors: (
 // scss-docs-end colors-map
 
 // scss-docs-start theme-color-variables
-$primary:       #00cc99; // $blue !default;
-$secondary:     $gray-600 !default;
+$primary:       $indigo; // $blue !default;
+$secondary:     $gray-4 !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
-$light:         $gray-100 !default;
-$dark:          $gray-900 !default;
+$light:         $gray-6 !default;
+$dark:        #5B4E6E !default;
 // scss-docs-end theme-color-variables
+$blue-green:    $teal;
+$gray-blur: $gray-6-blur;
 
 // scss-docs-start theme-colors-map
 $theme-colors: (
@@ -86,7 +93,10 @@ $theme-colors: (
   "warning":    $warning,
   "danger":     $danger,
   "light":      $light,
-  "dark":       $dark
+  "dark":       $dark,
+  "blue-green": $blue-green,
+  "gray":       $gray-5,
+  "gray-blur":  $gray-blur
 ) !default;
 // scss-docs-end theme-colors-map
 
