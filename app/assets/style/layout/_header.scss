@@ -1,0 +1,25 @@
+
+.header-logo{
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    a{
+        background: url(../images/Logo.svg) no-repeat;
+        width: 139px;
+        height: 40px;
+        background-size: cover;
+        display: block;
+        @include hide-text;
+        background-position: center center;
+    }
+}
+
+.header{
+    .nav-link{
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        color: $primary;
+    }
+}
